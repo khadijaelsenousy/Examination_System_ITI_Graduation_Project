@@ -62,7 +62,24 @@ The **Examination System** streamlines managing students, instructors, courses, 
 | Dashboards     | Power BI               |
 | Web Framework  | Streamlit (Python)     |
 
+
 ---
+
+## 📸 Screenshots
+
+### 🎓 Student Exam Interface
+![Student Exam](main pages (screen shot)/Overview.png)
+
+### 📈 Instructor Dashboard
+![Dashboard](main pages (screen shot)/Student.png)
+
+### 📊 Power BI Overview
+![Power BI](main pages (screen shot)/instructors.png)
+
+### 🧾 SSRS Report
+![SSRS Report](main pages (screen shot)/Programs.png)
+
+
 
 ## 🎥 Demo
 
