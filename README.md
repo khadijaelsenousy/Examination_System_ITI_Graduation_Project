@@ -68,7 +68,7 @@ The **Examination System** streamlines managing students, instructors, courses, 
 ## 📸 Screenshots
 
 ### 🎓 Student Exam Interface
-![Student Exam](main pages (screen shot)/Overview.png)
+![Student Exam](Power_BI Dashboard/main pages(screen shot)/Overview.png)
 
 ### 📈 Instructor Dashboard
 ![Dashboard](main pages (screen shot)/Student.png)
