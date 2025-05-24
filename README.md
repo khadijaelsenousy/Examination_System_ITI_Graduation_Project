@@ -67,22 +67,23 @@ The **Examination System** streamlines managing students, instructors, courses, 
 
 ## 📸 Screenshots
 ### 📊 Power BI Home 
-![Power BI](/Power_BI_Dashboard\Screenshots_main_pages\Home.png)
+![Power BI](Power_BI_Dashboard/ScreenShots_main_pages/Home.png)
 
 ### 📊 Power BI Overview
-![Power BI](Power_BI_Dashboard\Screenshots_main_pages\Overview.png)
+
+![Power BI](Power_BI_Dashboard/ScreenShots_main_pages/Overview.png)
 
 ### 🎓 Student Dashboard 
-![Student Exam](Power_BI_Dashboard\Screenshots_main_pages\Student.png)
+![Student Exam](Power_BI_Dashboard/ScreenShots_main_pages/Student.png)
 
 ### 👨‍🏫  Instructor Dashboard
-![Dashboard](Power_BI_Dashboard\Screenshots_main_pages\Instructors.png)
+![Dashboard](Power_BI_Dashboard/ScreenShots_main_pages/instructors.png)
 
 ### 📊 Department Dashboard 
-![Power BI](Power_BI_Dashboard\Screenshots_main_pages\Department.png)
+![Power BI](Power_BI_Dashboard/ScreenShots_main_pages/Department.png)
 
 ### 🧾 Programs Dashboard 
-![SSRS Report](Power_BI_Dashboard\Screenshots_main_pages\programs.png)
+![SSRS Report](Power_BI_Dashboard/ScreenShots_main_pages/Programs.png)
 
 
 
