@@ -822,4 +822,8 @@ END;
 EXEC DeleteStudentCertf 1, 'SQL Certification';
 
 
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> 40d0f6a (Renamed folders for cleaner paths)

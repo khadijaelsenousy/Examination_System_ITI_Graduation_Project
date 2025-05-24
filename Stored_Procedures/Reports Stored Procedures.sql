@@ -14,6 +14,7 @@ EXEC GetStudentsByDepartment 1;
 
 -- Report 2: Student Grades in All Courses
 
+<<<<<<< HEAD
 Create PROCEDURE GetStudentGrades
     @St_ID INT
 AS
@@ -32,6 +33,26 @@ GO
 
 EXEC GetStudentGrades 200;
 
+=======
+Create PROCEDURE GetStudentGrades
+    @St_ID INT
+AS
+BEGIN
+    SELECT 
+        C.Course_Name, 
+        ISNULL(SUM(DISTINCT ES.St_Score), 0) AS Total_St_Score 
+    FROM Courses C
+    inner JOIN Exam E ON C.Course_ID = E.Course_ID
+    inner JOIN Exam_Student ES ON E.Exam_ID = ES.Exam_ID AND ES.St_ID = @St_ID
+    WHERE C.Course_ID IS NOT NULL 
+    GROUP BY C.Course_Name; 
+END;
+GO
+
+
+EXEC GetStudentGrades 200;
+
+>>>>>>> 40d0f6a (Renamed folders for cleaner paths)
 
 
 -- Report 3: Instructor's Courses and Student Count
@@ -66,6 +87,7 @@ EXEC GetCourseTopics 4;
 
 ---Report 6
 
+<<<<<<< HEAD
 CREATE PROCEDURE GettExamReport
     @Exam_ID INT,
     @Student_ID INT
@@ -103,3 +125,42 @@ BEGIN
     ORDER BY Q.[Ques_ID], C.[Choice_ID];
 END;
 GO
+=======
+CREATE PROCEDURE GettExamReport
+    @Exam_ID INT,
+    @Student_ID INT
+AS
+BEGIN
+    SELECT 
+        Q.[Ques_ID],
+        Q.[Ques_Text],
+        SA.[St_Answer]
+    FROM [dbo].[Questions] Q
+    LEFT JOIN [dbo].[Exam_Student] SA
+        ON Q.[Ques_ID] = SA.[Ques_ID]
+        AND SA.[St_ID] = @Student_ID
+    WHERE SA.[Exam_ID] = @Exam_ID;
+END;
+GO
+
+---Report 5
+CREATE PROCEDURE GetExamQuestionsWithChoices
+    @Exam_ID INT
+AS
+BEGIN
+    SELECT 
+        Q.[Ques_ID],
+        Q.[Ques_Text],
+        C.[Choice_ID],
+        C.[Choice_Text],
+        C.[Is_Corrected]
+    FROM [dbo].[Exam_Questions] EQ
+    INNER JOIN [dbo].[Questions] Q
+        ON EQ.[Ques_ID] = Q.[Ques_ID]
+    LEFT JOIN [dbo].[Choices] C
+        ON Q.[Ques_ID] = C.[Ques_ID]
+    WHERE EQ.Exam_ID = @Exam_ID
+    ORDER BY Q.[Ques_ID], C.[Choice_ID];
+END;
+GO
+>>>>>>> 40d0f6a (Renamed folders for cleaner paths)
