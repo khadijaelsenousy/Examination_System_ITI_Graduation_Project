@@ -65,7 +65,7 @@ The **Examination System** streamlines managing students, instructors, courses, 
 
 ---
 
-## 📸 Screenshots
+## 📸 Screenshots For Main Pages 
 ### 📊 Power BI Home 
 ![Power BI](Power_BI_Dashboard/ScreenShots_main_pages/Home.png)
 
